@@ -6,7 +6,7 @@ export default function ETH() {
 
     const Name = "ETHEREUM"
 
-    const Min = "1"
+    const Min = "0.095"
 
     const Max ="100"
 

@@ -6,7 +6,7 @@ export default function BNB() {
 
     const Name = "BINANCE COIN"
 
-    const Min = "2.5"
+    const Min = "0.8"
 
     const Max = "100"
 

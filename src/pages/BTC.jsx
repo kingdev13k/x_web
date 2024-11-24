@@ -6,7 +6,7 @@ export default function BTC() {
 
     const Name = "BITCOIN"
 
-    const Min = "0.05";
+    const Min = "0.006";
 
     const Max = "20";
 
