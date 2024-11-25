@@ -3,7 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaThumbsUp, FaShareAlt } from "react-icons/fa";
-import mainDisplay from "../assets/mainDisplay.jpeg";
 import BTC from "./BTC";
 import ETH from "./ETH.JSX";
 import BNB from "./BNB.JSX";
@@ -36,8 +35,7 @@ function Main() {
                     id="binance-connect-partners-with-trust-wallet-to-drive-crypto-adoption-to-drive-more-users-into-web3"
                     className="ib-page-title css-1pv5zum"
                   >
-                    Celebrate Binance’s Sixth Anniversary With Binance 2x Crypto
-                    Giveaway Rewards!
+                    Exciting News: Our First Global Crypto Giveaway
                   </h1>
                   <div className="css-4cffwv">
                     <div data-bn-type="text" className="css-ync1um">
@@ -50,7 +48,7 @@ function Main() {
                 <span data-area="img" className="css-jyb3wi">
                   <span className="css-jce7cz">
                     <img
-                      src={mainDisplay}
+                      src="/img/displayimage.jpg"
                       className="mica-lazy-img css-182lng5"
                       style={{ backgroundColor: "transparent" }}
                       alt="Description of the image"
@@ -58,24 +56,27 @@ function Main() {
                   </span>
                 </span>
                 <p className="text">
-                  To celebrate Binance’s sixth anniversary, Binance Earn is
-                  delighted to announce a 2x Giveaway event the next few
-                  weeks.Users who participate will be able to share plenty of
-                  rewards, so make sure you don’t miss out on your opportunity
-                  to join the fun. <br />
+                  We know you’ve been waiting for this—and it’s finally here!
+                  Unlike our past giveaways that were limited to our local
+                  community, this time, we’re breaking boundaries. The crypto
+                  revolution connects us all, no matter where you are, so we’re
+                  giving everyone the chance to win BIG!
                   <br />
-                  Binance reserves the right at any time in its sole and
-                  absolute discretion to determine and/or amend or vary these
-                  Promotion Terms without prior notice, including but not
-                  limited to canceling, extending, terminating or suspending
-                  this Promotion, its eligibility terms and criteria, the
-                  selection and number of winners, and the timing of any act to
-                  be done, and all users shall be bound by these amendments.
                   <br />
+                  🎁 What’s in it for you? We’re giving away insert prize
+                  details: 1 ETH, $500 in BTC etc. straight to your wallet! Why
+                  this giveaway? Because YOU matter. Our goal has always been to
+                  give back to our amazing supporters. Crypto enables us to go
+                  beyond borders and make this a truly global celebration.
                   <br />
                   follow the links bellow to join the 2x event.
                 </p>
-                <div className="links">
+                <div
+                  style={{
+                    color: "#432994",
+                  }}
+                  className="links"
+                >
                   <Link to="/earn-with-bitcoin" className="css-1v1n4ms">
                     Click Here to participate with Bitcoin{" "}
                   </Link>{" "}

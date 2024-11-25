@@ -1,11 +1,9 @@
 import React from "react";
-import { FaBars } from "react-icons/fa6";
-import logo from "../assets/logo.svg";
 
 function Header() {
   return (
     <React.Fragment>
-      <div className="css-16l7bx3">
+      {/* <div className="css-16l7bx3">
         <div className="header-wrapper">
           <div className="left-header">
             <img src={logo} className="css-15dgfve" />
@@ -53,8 +51,8 @@ function Header() {
           <div id="mobile_header_menu_burger" className="css-1q9z3bm">
             <FaBars className="css-mykl4n" />
           </div>
-        </div>
-      </header>
+        </div> */}
+      {/* </header> */}
     </React.Fragment>
   );
 }
