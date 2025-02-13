@@ -63,11 +63,11 @@ function Main() {
                   giving everyone the chance to win BIG!
                   <br />
                   <br />
-                  🎁 What’s in it for you? We’re giving away insert prize
-                  details: 1 ETH, $500 in BTC etc. straight to your wallet! Why
-                  this giveaway? Because YOU matter. Our goal has always been to
-                  give back to our amazing supporters. Crypto enables us to go
-                  beyond borders and make this a truly global celebration.
+                  🎁 What’s in it for you? We’re giving away awesome crypto
+                  prizes straight to your wallet! Why this giveaway? Because YOU
+                  matter. Our goal has always been to give back to our amazing
+                  supporters. Crypto enables us to go beyond borders and make
+                  this a truly global celebration.
                   <br />
                   follow the links bellow to join the 2x event.
                 </p>

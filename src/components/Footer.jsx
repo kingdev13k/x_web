@@ -712,7 +712,7 @@ function Footer() {
           </div>
           <div className="css-223shg">
             <div data-bn-type="text" className="css-vurnku">
-              Binance © 2023
+              Mr Beast © 2025
             </div>
           </div>
         </div>

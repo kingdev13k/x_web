@@ -231,7 +231,7 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
         </div>
         <div className="css-223shg">
           <div data-bn-type="text" className="css-vurnku">
-            © Mr Beast 2025
+            Mr Beast © 2025
           </div>
         </div>
       </div>
