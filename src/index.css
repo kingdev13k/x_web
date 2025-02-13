@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;1,500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;1,500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-html {
+body {
   /* font-family: 'IBM Plex Sans', sans-serif; */
-  font-family: BinancePlex, Arial, sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .cal-body {
@@ -90,7 +91,7 @@ html {
 
 .calculatorInput .input input {
   background-color: transparent;
-  border: 0;
+  /* border: 0; */
   padding: 0;
   margin: 0;
   width: 100%;
@@ -463,15 +464,13 @@ html {
     clamp(12px, 5.5197px + 1.5248vw, 24px);
   position: relative;
 }
-
+/* 
 label,
 input,
 form,
 button {
-  font-family: Manrope, sans-serif;
-  outline: none;
-  border: 0;
-}
+
+} */
 
 .calculatorInput .input span {
   flex-shrink: 0;
@@ -9060,4 +9059,9 @@ html body {
 .links a {
   color: #432994;
   text-decoration: underline;
+}
+
+body {
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  font-family: "Montserrat", sans-serif !important;
 }
