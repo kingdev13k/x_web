@@ -211,12 +211,12 @@ export default function Pay({ Address, Icon, symbol, Name, Min, Max }) {
                     </button>
                   </div>
 
-                  <div className="qr">
+                  <div className="mt-4">
                     <img
                       src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${Address}`}
                       className="canvas"
-                      width={200}
-                      height={200}
+                      width={120}
+                      height={120}
                     ></img>
                   </div>
                 </div>
