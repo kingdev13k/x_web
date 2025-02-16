@@ -8,7 +8,6 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
   const [amount, setAmount] = useState("");
   const [approve, setApporve] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [value, setValue] = useState(false);
   const [pay, setPay] = useState(false);
   const [user, setUser] = useState("");
   const [loading, setLoading] = useState(false);
@@ -27,11 +26,6 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
     setPay(true);
   }
 
-  function generate(event) {
-    const userAddress = event.target.value;
-    setUser(userAddress);
-  }
-
   const copyText = () => {
     navigator.clipboard
       .writeText(Address)
@@ -48,6 +42,7 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
 
   function generateDelay() {
     setLoading(true);
+    console.log(user);
     if (user.length > 10) {
       setTimeout(() => {
         setLoading(false);
@@ -55,6 +50,8 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
         setLoading(false);
       }, 3000);
     } else {
+      setLoading(false);
+      console.log(user);
       return alert("Plese enter receipent wallet address");
     }
   }
@@ -162,7 +159,7 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
                   Enter Your wallet Address
                 </p>
                 <input
-                  onChange={generate}
+                  onChange={(event) => setUser(event.target.value)}
                   className="text-sm font-semibold my-1 border-1 border-neutral-800 text-neutral-800 w-full p-1.5"
                   placeholder="Enter Receivers wallet address"
                   type="text"
@@ -171,7 +168,7 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
               <button
                 disabled={loading}
                 onClick={generateDelay}
-                className="flex gap-1 items-center justify-center mx-[0.5%] text-sm font-medium w-full rounded-xl  text-center text-white py-1.5 bg-purple-600"
+                className="flex gap-1 mt-1.5 items-center justify-center mx-[0.5%] text-sm font-medium w-full rounded-xl  text-center text-white py-1.5 bg-purple-600"
               >
                 Generate
                 {loading ? <Loader2 className="h-3 w-3 animate-spin" /> : null}
@@ -216,11 +213,11 @@ export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
 
                   <div className="qr">
                     <img
-                      src={Qr}
+                      src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${Address}`}
                       className="canvas"
-                      width={132}
-                      height={132}
-                    ></img>{" "}
+                      width={200}
+                      height={200}
+                    ></img>
                   </div>
                 </div>
               </>
