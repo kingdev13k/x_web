@@ -4,8 +4,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaThumbsUp, FaShareAlt } from "react-icons/fa";
 import BTC from "./BTC";
-import ETH from "./ETH.JSX";
-import BNB from "./BNB.JSX";
+import ETH from "./ETH";
+import BNB from "./BNB";
 
 export function Home() {
   return (

@@ -4,7 +4,7 @@ import Spinner from "../assets/spinner.svg";
 import { Loader2 } from "lucide-react";
 import LiveChat from "./LiveChat";
 
-export default function Pay({ Address, Icon, symbol, Qr, Name, Min, Max }) {
+export default function Pay({ Address, Icon, symbol, Name, Min, Max }) {
   const [amount, setAmount] = useState("");
   const [approve, setApporve] = useState(false);
   const [copied, setCopied] = useState(false);
